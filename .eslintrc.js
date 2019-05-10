@@ -28,6 +28,7 @@ module.exports = {
     'no-unused-expressions':'off',
     'camelcase': 'off',
     'camelcase': 'off',
-    'no-sequences' :'off'
+    'no-sequences' :'off',
+    'attribute-hyphenation': 'off'
   }
 }

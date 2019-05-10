@@ -1,5 +1,5 @@
 <template>
-  <div class="container" >
+  <div class="container">
     <canvas id="Mycanvas"></canvas>
     <a-row class="fixed header-container">
       <a-col :xs="0" :sm="0" :md="1" :lg="3" :xl="3"/>
@@ -15,14 +15,20 @@
       </a-col>
       <a-col :xs="0" :sm="0" :md="1" :lg="3" :xl="3"/>
     </a-row>
-    <a-back-top />
+    <a-back-top/>
+    <Player />
   </div>
 </template>
 <script>
 import Header from '~/components/common/Header'
+import Player from '~/components/common/Player'
 export default {
   components: {
-    Header
+    Header,
+    Player
+  },
+  data() {
+    return {}
   },
   beforeMount() {
     if (this.check()) {
@@ -169,10 +175,6 @@ export default {
         }
       }
       return flag
-    }
-  },
-  data() {
-    return {
     }
   }
 }

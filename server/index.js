@@ -26,6 +26,7 @@ app.use(async (ctx, next) => {
   await next()
 })
 
+
 async function start() {
   // Instantiate nuxt.js
   const nuxt = new Nuxt(config)
