@@ -2,10 +2,6 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
-  server: {
-    port: 8000,
-    host: 'localhost', 
-  },
   /*
    ** Headers of the page
    */
